@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "westus"
+    },
+    "virtualMachineName": {
+      "value": "vstestvm1"
+    },
+    "virtualMachineSize": {
+      "value": "Standard_DS11_v2"
+    },
+    "adminUsername": {
+      "value": "user1"
+    },
+    "virtualNetworkName": {
+      "value": "vs-test-group1-vnet"
+    },
+    "networkInterfaceName": {
+      "value": "vstestvm1251"
+    },
+    "networkSecurityGroupName": {
+      "value": "vstestvm1-nsg"
+    },
+    "adminPublicKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCwmSiR0oPtispTwiE+G6HXIWus6WEwRrC8OYsAJzo6FpREjT++V7VqYgaYf3PNG48GLBmo5yJBIAVXvsV23iozgU3taTo0AKOmtZpEWXxwsVx6YxHSdtA+ge2jjzKCdqYCbLS3wrPpjf9TpWjue9cMPnh+qZokim3SEZUonNPjSskN8L7rwrbvSPlnZ18W57wZYLJG55yAnWx7Q5tc6dZJI3HypE5VhazftJMbxrHm5QD2v25tkmf4TBP3E1mFy3XLIUdxQs+ZQJhkyQAu15Q75chIPHlJD85qMC/osp5bfC6vCLAcMDrubhIw85JFRKB+pc5mVYBoNLQ//VdqrIYZ"
+    },
+    "diagnosticsStorageAccountName": {
+      "value": "vstestgroup1251"
+    },
+    "diagnosticsStorageAccountType": {
+      "value": "Standard_LRS"
+    },
+    "diagnosticsStorageAccountKind": {
+      "value": "Storage"
+    },
+    "diagnosticsStorageAccountId": {
+      "value": "Microsoft.Storage/storageAccounts/vstestgroup1251"
+    },
+    "addressPrefix": {
+      "value": "10.1.5.0/24"
+    },
+    "subnetName": {
+      "value": "default"
+    },
+    "subnetPrefix": {
+      "value": "10.1.5.0/24"
+    },
+    "publicIpAddressName": {
+      "value": "vstestvm1-ip"
+    },
+    "publicIpAddressType": {
+      "value": "Dynamic"
+    },
+    "publicIpAddressSku": {
+      "value": "Basic"
+    }
+  }
+}
